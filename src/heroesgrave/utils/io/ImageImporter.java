@@ -21,6 +21,7 @@ package heroesgrave.utils.io;
 
 import heroesgrave.paint.image.Canvas;
 import heroesgrave.utils.io.importers.ImporterBIN;
+//import heroesgrave.utils.io.importers.ImporterGIF;
 import heroesgrave.utils.io.importers.ImporterLBIN;
 import heroesgrave.utils.io.importers.ImporterZipBIN;
 import heroesgrave.utils.io.importers.ImporterZipLBIN;
@@ -50,6 +51,7 @@ public abstract class ImageImporter extends FileFilter
 		add(new ImporterZipBIN());
 		add(new ImporterLBIN());
 		add(new ImporterZipLBIN());
+		//add(new ImporterGIF());
 	}
 	
 	public static void add(ImageImporter exporter)
